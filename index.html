@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Finder</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <main class="max-w-xl mx-auto p-4">
+
+    <!-- Alert Box: Displays lost status to alert the user -->
+    <div class="bg-red-100 text-red-800 border border-red-300 rounded-xl px-4 py-3 mb-4 text-center">
+      <strong>Status:</strong> Lost – Please return to owner as soon as possible.
+    </div>
+
+    <!-- Pet Info Card -->
+    <section class="bg-white rounded-2xl border border-[#EDEDED] p-6 mb-6">
+      <!-- Pet Name -->
+      <h1 class="text-3xl font-bold mb-4 text-center">🐶 Bella</h1>
+
+      <!-- Pet Photos -->
+      <div class="flex justify-center gap-4 mb-4">
+        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=200&q=80" alt="Pet photo 2" class="w-24 h-24 rounded-full object-cover shadow-sm" />
+      </div>
+
+      <!-- Behavior Description -->
+      <p class="text-sm italic mb-4 text-center">
+        Very friendly, loves kids, scared of loud noises. Wears a name tag and is microchipped. May respond to “Bella”. Avoid sudden movements if she seems anxious.
+      </p>
+
+      <!-- Pet Attributes as Tags -->
+      <div class="flex flex-wrap justify-center gap-2 text-sm">
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Dog</span>
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Golden Retriever</span>
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">3 years old</span>
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Female</span>
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">AirTag Tracked</span>
+      </div>
+    </section>
+
+    <!-- Owner Info Card 1 -->
+    <section class="bg-white rounded-2xl border border-[#EDEDED] p-6 mb-6">
+      <h2 class="text-xl font-semibold mb-4">👤 Owner 1 Info</h2>
+
+      <!-- Owner Profile Info -->
+      <div class="flex items-center gap-4 mb-2">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Owner photo" class="w-16 h-16 rounded-full object-cover border border-[#EDEDED]" />
+        <div>
+          <p class="font-medium text-lg">Sarah Thompson</p>
+          <p class="text-sm text-gray-600">📞 +1 (234) 567-890</p>
+        </div>
+      </div>
+
+      <!-- Call and Text Buttons -->
+      <div class="mb-4 space-y-2">
+        <div class="flex gap-4">
+          <a href="tel:+1234567890" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-xl text-center font-semibold">Call</a>
+          <a href="sms:+1234567890" class="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-xl text-center font-semibold">Text</a>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="flex items-start gap-2 text-sm text-gray-600">
+        <!-- Location Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span>123 Maple St, Toronto, ON</span>
+      </div>
+    </section>
+
+    <!-- Owner Info Card 2 -->
+    <section class="bg-white rounded-2xl border border-[#EDEDED] p-6">
+      <h2 class="text-xl font-semibold mb-4">👤 Owner 2 Info</h2>
+
+      <!-- Owner Profile Info -->
+      <div class="flex items-center gap-4 mb-2">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Owner photo" class="w-16 h-16 rounded-full object-cover border border-[#EDEDED]" />
+        <div>
+          <p class="font-medium text-lg">James Rivera</p>
+          <p class="text-sm text-gray-600">📞 +1 (987) 654-321</p>
+        </div>
+      </div>
+
+      <!-- Call and Text Buttons -->
+      <div class="mb-4 space-y-2">
+        <div class="flex gap-4">
+          <a href="tel:+1987654321" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-xl text-center font-semibold">Call</a>
+          <a href="sms:+1987654321" class="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-xl text-center font-semibold">Text</a>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="flex items-start gap-2 text-sm text-gray-600">
+        <!-- Location Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span>456 Oak Ave, Toronto, ON</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
